@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #E8F5E9; /* Mint color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Center Content */
+#content {
+    text-align: center;
+    width: 640px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+
+/* Map Container */
+#map, #imageContainer {
+    width: 600px;
+    height: 300px;
+    border: 2px solid #A5D6A7;
+    margin: 20px auto;
+}
+
+/* Controls */
+#controls {
+    margin: 20px 0;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #A5D6A7;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #81C784;
+}
+
+/* Puzzle Container */
+#puzzle, #board {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    border: 2px solid #A5D6A7;
+    margin: 0 auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: #F1F8E9;
+    border-radius: 5px;
+}
+
+/* Cropped map container */
+#map-cropped-container {
+    margin: 20px auto;
+    width: 600px;
+    text-align: center;
+}
+
+#map-cropped-canvas {
+    border: 2px solid #A5D6A7;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
