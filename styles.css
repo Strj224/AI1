@@ -1,75 +1,51 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #E8F5E9; /* Mint color */
-    margin: 0;
-    padding: 0;
+    font-family: 'Georgia', serif; /* Wbudowana czcionka szeryfowa */
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-/* Center Content */
-#content {
+    align-items: flex-start; /* Wyśrodkowanie w poziomie, odstęp od góry */
+    min-height: 100vh; /* Wysokość całego widoku */
+    background: url('zorza.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff; /* Biały kolor tekstu dla kontrastu */
     text-align: center;
-    width: 640px;
+    margin: 0;
+    padding: 40px 0; /* Dodanie odstępu od góry i dołu */
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8); /* Półprzezroczyste tło dla lepszej czytelności */
     padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    background: #FFFFFF;
-    border-radius: 8px;
+    border-radius: 10px;
+    max-width: 500px; /* Ograniczenie szerokości kontenera */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtelny cień dla estetyki */
+    margin: auto; /* Wyśrodkowanie kontenera */
+    box-sizing: border-box; /* Uwzględnienie paddingu w wymiarach */
 }
 
-/* Map Container */
-#map, #imageContainer {
-    width: 600px;
-    height: 300px;
-    border: 2px solid #A5D6A7;
-    margin: 20px auto;
+#currentWeather, #forecast {
+    margin-top: 20px; /* Odstęp od innych elementów */
 }
 
-/* Controls */
-#controls {
-    margin: 20px 0;
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
 button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #A5D6A7;
-    color: #FFFFFF;
+    padding: 10px 10px;
+    background-color: forestgreen;
+    opacity: 88%;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #81C784;
-}
-
-/* Puzzle Container */
-#puzzle, #board {
-    position: relative;
-    width: 600px;
-    height: 300px;
-    border: 2px solid #A5D6A7;
-    margin: 0 auto;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    background: #F1F8E9;
-    border-radius: 5px;
-}
-
-/* Cropped map container */
-#map-cropped-container {
-    margin: 20px auto;
-    width: 600px;
-    text-align: center;
-}
-
-#map-cropped-canvas {
-    border: 2px solid #A5D6A7;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #0056b3;
 }

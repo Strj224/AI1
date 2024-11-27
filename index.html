@@ -2,28 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Puzzle Game with Leaflet</title>
-    <link rel="stylesheet" href="leaflet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pogoda</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="content">
-    <div id="map"></div>
-    <div id="controls">
-        <button id="getLocation">Moja lokalizacja</button>
-        <button id="saveButton">Pobierz mapę</button>
-    </div>
-    <div id="imageContainer">
-        <img id="puzzleImage" style="display:none;" alt="Zrzut mapy"/>
-    </div>
-    <div id="board"></div>
+<div class="container">
+    <h1>Sprawdź pogodę</h1>
+    <input type="text" id="city" placeholder="Wprowadź miejscowość">
+    <button onclick="getWeatherData(document.getElementById('city').value)">Pogoda</button>
+    <div id="currentWeather"></div>
+    <div id="forecast"></div>
 </div>
-
-<script src="leaflet.js"></script>
-<script src="https://unpkg.com/leaflet-image@0.5.0/dist/leaflet-image.js"></script>
-<script src="leaflet-src.js"></script>
-<script src="leaflet-providers.js"></script>
-<script src="leaflet-image.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
