@@ -1,0 +1,47 @@
+/* Styl 3: Fioletowe tło z nowoczesnym wyglądem */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tahoma', sans-serif;
+    background-color: #6A5ACD; /* Fioletowe tło */
+    color: #FFF; /* Biały tekst */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Nagłówki */
+header h1 {
+    font-size: 300%; /* Duży nagłówek */
+    font-weight: bold;
+    color: #FFD700; /* Złoty tekst */
+    text-shadow: 2px 2px 5px #000; /* Cień pod tekstem */
+}
+
+h2 {
+    font-size: 180%;
+    font-weight: bold;
+    color: #FF4500; /* Pomarańczowy kolor */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #FFD700;
+    display: inline-block;
+}
+
+section {
+    background-color: #483D8B; /* Ciemnofioletowe tło */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Mocniejszy cień */
+    width: 80%;
+    max-width: 1000px;
+}
+
+img {
+    max-width: 50%;
+    border: 3px solid #FFD700; /* Złote obramowanie */
+    border-radius: 10px;
+}

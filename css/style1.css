@@ -1,0 +1,81 @@
+/* Ogólne stylowanie dla body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ADD8E6; /* Jasny błękit */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Nagłówek h1 - 250% rozmiaru normlanej czcionki */
+header h1 {
+    font-size: 250%; /* Zwiększenie rozmiaru nagłówka "Samochody" */
+    margin-bottom: 20px;
+}
+
+/* Nagłówek h2 - 200% rozmiaru normlanej czcionki */
+h2 {
+    font-size: 200%; /* Zwiększenie rozmiaru nagłówka 2 */
+    margin: 20px 0;
+}
+
+/* Nagłówek h3 - 150% rozmiaru normlanej czcionki */
+h3 {
+    font-size: 150%; /* Zwiększenie rozmiaru nagłówka 3 */
+    margin: 15px 0;
+}
+
+/* Sekcja samochodów - Porsche i Lamborghini */
+section {
+    background-color: #7FFF00; /* Seledynowy kolor */
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px; /* Ograniczenie maksymalnej szerokości */
+    border-radius: 20px; /* Zaokrąglone rogi */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Wypukły efekt */
+    box-sizing: border-box; /* Padding nie wpływa na szerokość */
+}
+
+/* Obrazki - wyśrodkowane, z granatowymi obramówkami */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 40%;
+    height: auto;
+    border: 5px solid #000080; /* Granatowa obramówka wokół zdjęć */
+    box-sizing: border-box;
+}
+
+/* Tekst w sekcjach */
+p, ul {
+    margin: 10px 0;
+    text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+/* Lista - usuń punkty i wyśrodkuj */
+ul {
+    list-style-type: none; /* Usuń punkty z listy */
+    padding-left: 0;
+}
+
+ul li {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Responsywność - dla urządzeń mobilnych */
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+    }
+
+    img {
+        max-width: 100%; /* Obrazki wypełniają całą szerokość ekranu */
+    }
+}

@@ -1,0 +1,115 @@
+/* Ogólne stylowanie dla body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif; /* Czcionka czytelniejsza niż Arial */
+    background-color: #2E8B57; /* Ciemna zieleń jako tło */
+    color: #F5F5DC; /* Jasny beżowy tekst */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    text-align: left; /* Tekst wyrównany do lewej */
+}
+
+/* Nagłówek h1 - bardziej efektowny i pogrubiony */
+header h1 {
+    font-size: 300%; /* Większy rozmiar nagłówka */
+    font-weight: bold; /* Pogrubienie nagłówka */
+    margin-bottom: 30px;
+    color: #FFD700; /* Złoty kolor */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Cień pod tekstem */
+    text-align: center; /* Wyśrodkowanie tylko H1 */
+}
+
+/* Nagłówek h2 - pogrubiony */
+h2 {
+    font-size: 180%; /* Mniejszy niż w style1.css */
+    font-weight: bold; /* Pogrubienie nagłówka */
+    color: #FFA500; /* Pomarańczowy kolor */
+    margin: 15px 0;
+    border-bottom: 2px solid #FFD700; /* Linia pod nagłówkiem */
+    display: inline-block;
+}
+
+/* Nagłówek h3 - pogrubiony */
+h3 {
+    font-size: 130%; /* Mniejszy rozmiar niż w style1.css */
+    font-weight: bold; /* Pogrubienie nagłówka */
+    margin: 10px 0;
+    color: #FFD700; /* Złoty kolor */
+}
+
+/* Sekcja samochodów - odmienny układ */
+section {
+    background-color: #3CB371; /* Jasna zieleń */
+    margin: 30px auto;
+    padding: 30px;
+    width: 80%; /* Mniejsza szerokość */
+    max-width: 1000px;
+    border-left: 10px solid #FFD700; /* Złota linia z lewej */
+    border-radius: 15px; /* Zaokrąglone rogi */
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.3); /* Cień na dole */
+    box-sizing: border-box;
+}
+
+/* Obrazki - zmniejszone, z zaokrągleniami */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 80%; /* Mniejsze obrazki */
+    height: auto;
+    border: 5px solid #FFD700; /* Obramowanie w kolorze złotym */
+    border-radius: 20px; /* Zaokrąglone rogi */
+    box-sizing: border-box;
+}
+
+/* Tekst w sekcjach */
+p, ul {
+    margin: 10px 0;
+    text-align: justify; /* Wyrównanie tekstu do obu stron */
+    line-height: 1.8; /* Większe odstępy między liniami */
+}
+
+/* Lista - zachowuje punkty */
+ul {
+    list-style-type: square; /* Kwadratowe punkty listy */
+    padding-left: 20px;
+    color: #FFD700; /* Kolor złoty */
+}
+
+ul li {
+    font-weight: normal; /* Normalny tekst, nie pogrubiony */
+    margin: 5px 0;
+}
+
+/* Linki - wyróżnione i podkreślone */
+a {
+    color: #FFD700; /* Złoty kolor */
+    text-decoration: underline; /* Podkreślenie */
+    font-weight: bold;
+}
+
+/* Responsywność - dla urządzeń mobilnych */
+@media (max-width: 768px) {
+    section {
+        width: 95%; /* Większa szerokość na wąskich ekranach */
+    }
+
+    img {
+        max-width: 100%; /* Obrazki wypełniają całą szerokość ekranu */
+    }
+
+    h1 {
+        font-size: 200%; /* Zmniejszenie rozmiaru H1 na mobilnych */
+    }
+
+    h2 {
+        font-size: 150%; /* Zmniejszenie rozmiaru H2 na mobilnych */
+    }
+
+    h3 {
+        font-size: 110%; /* Zmniejszenie rozmiaru H3 na mobilnych */
+    }
+}
